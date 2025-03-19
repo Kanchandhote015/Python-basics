@@ -1,0 +1,21 @@
+class Library:
+
+  def __init__(self, no_of_books, books):
+    self.no_of_books = no_of_books
+    self.books = books
+
+  def booklist(self):
+    print(f"The available number of books in library are {self.no_of_books}")
+    print(f"The available books in library are :")
+    for book in books:
+      print(book)
+
+  def add_book(self, book):
+    self.books.append(book)
+
+
+books = ["The Alchemist", "Atomic Habbits", "The power of habbit","The art of self-improvement", "The power of Manifestation","Rich Dad Poor Dad"]
+
+lib = Library(len(books), books)
+lib.booklist()
+print(lib.no_of_books)
